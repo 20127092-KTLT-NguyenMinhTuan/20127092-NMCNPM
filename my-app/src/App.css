@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+@import url("https://fonts.googleapis.com/css?family=Tangerine");
 
 * {
   margin: 0;
@@ -8,18 +9,17 @@
 }
 
 :root {
-  --font-roboto: "Roboto Slab", serif;
   --font-raleway: "Raleway", sans-serif;
+  --font-tangerine: "Tangerine", serif;
 }
 
 body {
-  font-family: var(--font-roboto);
-  background-color: #212426;
+  font-family: var(--font-tangerine);
+  background-color: #032B33;
 }
 
 .app {
   padding: 4rem;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,7 +78,7 @@ h1 {
 .empty {
   width: 100%;
   margin-top: 3rem;
-
+  position:relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -177,41 +177,3 @@ h1 {
   opacity: 1;
 }
 
-@media screen and (max-width: 600px) {
-  .app {
-    padding: 4rem 2rem;
-  }
-
-  .search {
-    padding: 1rem 1.75rem;
-    width: 100%;
-  }
-
-  .search input {
-    font-size: 1rem;
-  }
-
-  .search img {
-    width: 20px;
-    height: 20px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .app {
-    padding: 4rem 1rem;
-  }
-
-  h1 {
-    font-size: 2rem;
-  }
-
-  .container {
-    margin-top: 2rem;
-  }
-
-  .movie {
-    width: "100%";
-    margin: 1rem;
-  }
-}
