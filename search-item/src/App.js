@@ -4,7 +4,6 @@ import { useState } from "react";
 
 function App() {
   const [searchTerm,setSearchTerm] = useState('')
-  
   return(
     <div className="App">
       <input type = "text" placeholder="Search.." onChange={event => {setSearchTerm(event.target.value)}}></input>
